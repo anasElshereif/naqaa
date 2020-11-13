@@ -53,3 +53,14 @@ body{
     margin-left: 50px;
 
 }
+@media (max-width: 700px) {
+    .nav .right_links li.lang{
+        width: 100px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    .nav .right_links li.lang span{
+        width: 100px;
+        text-align: center;
+    }
+}

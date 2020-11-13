@@ -145,11 +145,13 @@ $(".store .item .prodcut .img_cont").on("click", function(){
 		display:"flex"
 	})
 	var imgSrc = $(this).find("img").attr("src"),
-	prname = $(this).parents(".prodcut").find('.name').text(),
+	prname = $(this).parents(".prodcut").find('.name.en').text(),
+	prarname = $(this).parents(".prodcut").find('.name.ar').text(),
 	new_price = parseInt($(this).parents(".prodcut").find(".new_price").text()),
 	old_price = parseInt($(this).parents(".prodcut").find(".old_price").text());
 	$(".prodcutPopup").find('.img_cont img').attr("src", imgSrc);
-	$(".prodcutPopup").find(".name").text(prname);
+	$(".prodcutPopup").find(".name.en").text(prname);
+	$(".prodcutPopup").find(".name.ar").text(prarname);
 	$('.prodcutPopup').find('.new_price').text(new_price + "TL")
 	$('.prodcutPopup').find('.old_price').text(old_price + "TL")
 })
